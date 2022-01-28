@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+.navbar{
+    background-color: gray;
+    overflow: auto;
+    margin-bottom: 50px;
+   
+}
+
+.navbar a{
+    float: right;
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: row-reverse;
+   
+}
+
+.navbar a:hover{
+    background-color: orchid;
+}
+
+.header{
+    font-size:30px;
+    border: 15px solid rgb(5, 3, 90);
+    background-color: green;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-weight: 600;
+}
+
+p::before{content:"First make me smaller,then lost me!";}
+
+
+@media screen and (max-width: 922px) {
+    body {
+        background-color: rgb(159, 233, 64);
+    }
+        
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color:orange;
+        }
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+    }
+    .navbar a{
+        color: black;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-color: darkmagenta;
+    }
+
+    
+    
+    .navbar{
+        margin: 15px 15px;
+        margin-bottom: 100px;
+        background-color: cyan;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        
+    }
+    .header{
+        background-color:darkmagenta;
+        border:15px solid red ;
+        font-weight: 100;
+        font-size:18px;
+    }
+
+p::before{content:"Did you realize,you made a magic!";}
+
+
+
+
+}
